@@ -1,0 +1,76 @@
+/home/www/flask_project/
+├── app.py
+├── backup
+│   ├── backup-10-dic-2.tar
+│   ├── backup-10-dic.tar
+│   ├── backup-17-nov.tar
+│   ├── backup-18-dec.tar
+│   ├── backup-1-dec.tar
+│   ├── backup-20-nov.tar
+│   ├── backup-2-dec.tar
+│   └── backup-7-dec.tar
+├── forms.py
+├── README.md
+├── static
+│   ├── css
+│   │   ├── bootstrap.css
+│   │   ├── bootstrap.css.map
+│   │   ├── bootstrap.min.css
+│   │   ├── bootstrap.min.css.map
+│   │   ├── bootstrap-theme.css
+│   │   ├── bootstrap-theme.css.map
+│   │   ├── bootstrap-theme.min.css
+│   │   ├── bootstrap-theme.min.css.map
+│   │   ├── contacto.css
+│   │   ├── estadisticas.css
+│   │   ├── home.css
+│   │   ├── medicion.css
+│   │   ├── nosotros.css
+│   │   └── sub.css
+│   ├── fonts
+│   │   ├── glyphicons-halflings-regular.eot
+│   │   ├── glyphicons-halflings-regular.svg
+│   │   ├── glyphicons-halflings-regular.ttf
+│   │   ├── glyphicons-halflings-regular.woff
+│   │   └── glyphicons-halflings-regular.woff2
+│   ├── img
+│   │   ├── background2.jpg
+│   │   ├── background.jpg
+│   │   ├── cristhian.jpg
+│   │   ├── danielR.jpg
+│   │   ├── logo.png
+│   │   └── portrait.png
+│   ├── index.html
+│   ├── js
+│   │   ├── bootstrap.js
+│   │   ├── bootstrap.min.js
+│   │   ├── _contacto.js
+│   │   ├── _day_change.js
+│   │   ├── _graficos.js
+│   │   ├── _info_otras_fuentes.js
+│   │   ├── map.js
+│   │   ├── npm.js
+│   │   └── _validator.js
+│   ├── map.js
+│   ├── php
+│   │   └── contacto_validation.php
+│   ├── _retrieve_info.sh
+│   ├── schedScripts
+│   │   ├── _retrieve_info.sh
+│   │   └── _send_emails_sub.sh
+│   └── xml
+│       └── aemet.xml
+└── templates
+    ├── cancelSub.html
+    ├── contacto.html
+    ├── estadisticas.html
+    ├── formulario.html
+    ├── formularioSub.html
+    ├── home.html
+    ├── infoPredExtra.html
+    ├── informacion.html
+    ├── medicion.html
+    ├── nosotros.html
+    └── sub.html
+
+10 directories, 63 files
