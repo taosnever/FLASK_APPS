@@ -1,0 +1,38 @@
+body {
+    background: url("../img/background.jpg") fixed;
+    background-repeat: no-repeat;
+	background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+
+.theme-showcase {
+    background-color: white;
+}
+
+#d7 {
+    background-color: #BABABA;
+}
+
+#horas p {
+    vertical-align: middle;
+}
+
+.hideTable {
+    display: none;
+}
+
+.showTable {
+    display: inline-table;
+}
+
+#horas table { 
+    border-spacing: 50px 0; 
+}
+
+#horas a.active {
+    background: #BABABA;
+    border-color: black;
+}

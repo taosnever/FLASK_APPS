@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Suscríbete</title>
+
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheets propias -->
+    <link href="static/css/sub.css" rel="stylesheet">
+    <link rel="icon" href="static/img/logo.png">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-left">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="medicion.html">Medición</a></li>
+                    <li><a href="estadisticas.html">Estadísticas</a></li>
+                    <li class="active"><a href="sub.html">Suscripción</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+        <div class="page-header">
+            <h1>Suscripción a nuestro servicio</h1>
+            <p>Si deseas suscribirte, recibiras semanalmente los datos que nuestra estación ha ido recopilando. Además, recibirás también una previsión para los próximos días proporcionada por AEMET. Para de esta forma complementar la experiencia ofrecida.</p>
+        </div>
+
+        {% block formularioSub %}
+        {% endblock %}
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/_validator.js"></script>
+    <script>
+        $('#contact-form-sub').validator();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+1 cambiar en sites-available por defecto flask_project.bak2.https -> flask_project
+2 descomentar las lineas ssh en nginx.conf
+3 devolver el backup en snippets
+4 comentar por si se mantiene en sites-available->flask_project->'add_header Strict-Transport-Security max-age=0;
+5 reiniciar 'sudo service restart' y flask 

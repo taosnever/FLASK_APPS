@@ -1,0 +1,43 @@
+{% extends "sub.html" %}
+
+{% block formularioSub %}
+  {% if success %}
+    <div class="row">
+      <div class="form-group col-md-offset-1 col-md-10">
+        <div class="alert alert-success alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Gracias por confiar en nuestro servicio. Cada Miercoles recibira un mensaje con la informacion de nuestra estacion.
+        </div>
+      </div>
+    </div>
+  {% else %}
+
+    <form  id="contact-form-sub" method="post" action="{{ url_for('subHTML') }}" role="form">
+        <div class="controls">
+            <div class="row">
+                <div class="form-group col-md-5 col-md-offset-1">
+                  {{ form.email.label(class_="control-label") }}
+                  {{ form.email(class_="form-control", type="email", placeholder="Ingrese su correo electrónico", required="", oninput="setCustomValidity('')", oninvalid="this.setCustomValidity('Ingrese un correo electrónico válido')") }}
+		  <div class="help-block with-errors"></div>
+                </div>
+            </div>
+	    <div class="row">
+		<div class="form-inline col-md-5 col-md-offset-1">
+		  {{ form.pred(class_="checkbox") }}
+                  {{ form.pred.label(class_="checkbox-inline") }}
+		  <div class="help-block with-errors"></div>
+		</div>
+	    </div>
+            <div class="row">
+                <div class="form-group col-md-offset-1 col-md-1">
+                    {{ form.submit(class_="btn btn-primary") }}
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        $('#contact-form-sub').validator();
+    </script>
+  {% endif %}
+{% endblock %}
+

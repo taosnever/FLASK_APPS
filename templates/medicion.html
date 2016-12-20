@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Medición</title>
+
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheets propias -->
+    <link href="static/css/medicion.css" rel="stylesheet">
+    <link rel="icon" href="static/img/logo.png">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-left">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="medicion.html">Medición</a></li>
+                    <li><a href="estadisticas.html">Estadísticas</a></li>
+                    <li><a href="sub.html">Suscripción</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+        <div class="page-header">
+            <h1 id="hoy">Hoy</h1>
+            <p>Medición de las últimas horas:</p>
+        </div>
+        <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div id="horas" class="list-group">
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+
+        <br>
+        <br>
+
+        <div class="page-header">
+            <h1>Esta semana</h1>
+            <p>Datos de temperatura, humedad y presión atmosférica de los últimos 7 dias:</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th id="d6">Miércoles</th>
+                            <th id="d5">Jueves</th>
+                            <th id="d4">Viernes</th>
+                            <th id="d3">Sábado</th>
+                            <th id="d2">Domingo</th>
+                            <th id="d1">Lunes</th>
+                            <th id="d0">Martes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Temperatura</th>
+                            <td id="t0">20º</td>
+                            <td id="t1">18º</td>
+                            <td id="t2">22º</td>
+                            <td id="t3">25º</td>
+                            <td id="t4">17º</td>
+                            <td id="t5">18º</td>
+                            <td id="t6">20º</td>
+                        </tr>
+                        <tr>
+                            <th>Humedad relativa</th>
+                            <td id="hu0">60%</td>
+                            <td id="hu1">65%</td>
+                            <td id="hu2">69%</td>
+                            <td id="hu3">70%</td>
+                            <td id="hu4">61%</td>
+                            <td id="hu5">63%</td>
+                            <td id="hu6">60%</td>
+                        </tr>
+                        <tr>
+                            <th>Presión amosférica</th>
+                            <td id="p0">1026.41 hPa</td>
+                            <td id="p1">1025.98 hPa</td>
+                            <td id="p2">1032.74 hPa</td>
+                            <td id="p3">1026.75 hPa</td>
+                            <td id="p4">1064.36 hPa</td>
+                            <td id="p5">1022.22 hPa</td>
+                            <td id="p6">1027.31 hPa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/_day_change.js"></script>
+  </body>
+</html>
